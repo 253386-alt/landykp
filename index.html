@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mi Portfolio | Desarrollador Software</title>
   <link rel="stylesheet" href="a.css" />
+  <link rel="stylesheet" href="extras.css" />
 </head>
 <body>
 
@@ -14,6 +15,7 @@
         <li><a href="#about">Sobre mí</a></li>
         <li><a href="#projects">Proyectos</a></li>
         <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#certificates">Certificados</a></li>
         <li><a href="#contact">Contacto</a></li>
       </ul>
     </nav>
@@ -21,17 +23,25 @@
 
   <main>
     <section class="hero">
-      <span class="hero-tag">Hola, mi nombre es</span>
-      <h1>Sebastian Flores Castellanos</h1>
+    <div class="hero-header">
+  <img src="img/img4.jpeg" alt="Sebastian Flores Castellanos" class="hero-photo" />
+  <div class="hero-names">
+    <h1>Sebastian Flores Castellanos</h1>
+    <h2>univercidad politecnica de chiapas </h2>
+</div>
       <p>Estudiante Especializado en Desarrollo de software enfocado en construir aplicaciones eficientes, backend sólido e interfaces funcionales.</p>
       <a href="#projects" class="btn">Ver mi trabajo</a>
+      </div>
     </section>
 
     <section id="about">
       <h2>Sobre mí</h2>
-      <p class="about-text">
-         !!Si lo Pudes Imaginar Lo Puedes Desarrollo de software!! Me enfoco en crear soluciones optimizadas, escribir código limpio y aprender continuamente sobre nuevas herramientas y arquitecturas.
-      </p>
+      <div class="about-wrapper">
+        <img src="img/ima.jpeg" alt="Foto de Sebastian Flores Castellanos" class="about-photo" />
+        <p class="about-text">
+          !!Si lo Pudes Imaginar Lo Puedes Desarrollo de software!! Me enfoco en crear soluciones optimizadas, escribir código limpio y aprender continuamente sobre nuevas herramientas y arquitecturas. <strong>Actualmente Estudiando una ingenieria en sistema  </strong> 
+        </p>
+      </div>
     </section>
 
     <section id="projects">
@@ -77,13 +87,12 @@
             <span class="tag">Java</span>
             <span class="tag">Kotlin</span>
             <span class="tag">Python</span>
-            <span class="tag">C++</span>
             <span class="tag">SQL</span>
           </div>
         </div>
 
         <div class="card">
-          <h3>Herramientas & Entornos</h3>
+          <h3>Herramientas y Entornos</h3>
           <div class="tags margin-top-sm">
             <span class="tag">Git & GitHub</span>
             <span class="tag">Linux / Terminal CLI</span>
@@ -94,14 +103,28 @@
       </div>
     </section>
 
-    
+    <section id="certificates">
+      <h2>Certificados</h2>
+      <div class="grid">
+        <div class="card cert-card">
+          <img src="img/img2.png" alt="Certificado 1" class="cert-img" />
+          <h3>Certificado de cisco packet tracer</h3>
+          <p>2026</p>
+        </div>
 
-  <footer >
-    <seletion id="contact">
+        <div class="card cert-card">
+          <img src="img/img3.jpg" alt="Certificado 2" class="cert-img" />
+          <h3>certificado de AWS</h3>
+          <p>2025</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
     <p>&copy; Futuro Desarrollador Software .</p>
     <p>&copy; Mi Contacto:961XXXXX .</p>
     <p>&copy; Mi Correo: Sebastian@mail.com .</p>
-    </seletion>
   </footer>
 </body>
 </html>
