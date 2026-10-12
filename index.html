@@ -3,128 +3,270 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Portfolio | Desarrollador Software</title>
-  <link rel="stylesheet" href="a.css" />
-  <link rel="stylesheet" href="extras.css" />
+  <title>Sebastian Flores Castellanos | Desarrollador de Software</title>
+  <meta name="description" content="Portfolio de Sebastian Flores Castellanos, estudiante de Ingeniería en Sistemas en la Universidad Politécnica de Chiapas. Desarrollo backend, web y apps móviles con Java, Kotlin y Python." />
+  <meta name="author" content="Sebastian Flores Castellanos" />
+  <meta name="theme-color" content="#050507" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sebastian Flores Castellanos | Desarrollador de Software" />
+  <meta property="og:description" content="Estudiante de Ingeniería en Sistemas. Backend sólido, interfaces funcionales y código limpio." />
+  <meta property="og:image" content="img/img4.jpeg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Styles.css" />
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
-  <header>
-    <nav>
-      <ul class="nav-links">
+  <div class="bg" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+    <span class="grid-bg"></span>
+  </div>
+
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#inicio" class="logo" aria-label="Ir al inicio">pequeño desarrollador<span></span></a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
         <li><a href="#about">Sobre mí</a></li>
         <li><a href="#projects">Proyectos</a></li>
         <li><a href="#skills">Habilidades</a></li>
         <li><a href="#certificates">Certificados</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <li><a href="#contact" class="nav-cta">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-    <div class="hero-header">
-  <img src="img/img4.jpeg" alt="Sebastian Flores Castellanos" class="hero-photo" />
-  <div class="hero-names">
-    <h1>Sebastian Flores Castellanos</h1>
-    <h2>univercidad politecnica de chiapas </h2>
-</div>
-      <p>Estudiante Especializado en Desarrollo de software enfocado en construir aplicaciones eficientes, backend sólido e interfaces funcionales.</p>
-      <a href="#projects" class="btn">Ver mi trabajo</a>
+  <main id="main">
+
+    <section class="hero" id="inicio">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <p class="status"><span class="dot"></span> Disponible para proyectos y prácticas</p>
+          <h1><span class="gradient-text">Sebastian Flores Castellanos</span></h1>
+          <p class="typed-line">Soy <span id="typed" class="typed"></span><span class="cursor" aria-hidden="true">|</span></p>
+          <p class="hero-school">Universidad Politécnica de Chiapas</p>
+
+          <p class="hero-desc">
+            Estudiante especializado en desarrollo de software, enfocado en construir aplicaciones eficientes,
+            mi es pecialidad backend .
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn">Ver mi trabajo →</a>
+            <a href="#contact" class="btn btn-outline">Contáctame</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="photo-ring">
+            <img src="img/img4.jpeg" alt="Retrato de Sebastian Flores Castellanos" class="hero-photo" width="320" height="320" />
+          </div>
+          <span class="float-chip c1">Java</span>
+          <span class="float-chip c2">Python</span>
+          <span class="float-chip c3">Kotlin</span>
+          <span class="float-chip c4">SQL</span>
+        </div>
       </div>
+
+      <ul class="stats">
+        <li><strong data-count="3">0</strong><span>Proyectos</span></li>
+        <li><strong data-count="4">0</strong><span>Lenguajes</span></li>
+        <li><strong data-count="2">0</strong><span>Certificados</span></li>
+        <li><strong data-count="4">0</strong><span>Herramientas</span></li>
+      </ul>
     </section>
 
-    <section id="about">
-      <h2>Sobre mí</h2>
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Java</span><span>Kotlin</span><span>Python</span><span>SQL</span><span>MySQL</span><span>Docker</span><span>Git</span><span>Linux</span><span>AWS</span><span>Android</span><span>Jetpack Compose</span><span>Streamlit</span><span>Pandas</span>
+        <span>Java</span><span>Kotlin</span><span>Python</span><span>SQL</span><span>MySQL</span><span>Docker</span><span>Git</span><span>Linux</span><span>AWS</span><span>Android</span><span>Jetpack Compose</span><span>Streamlit</span><span>Pandas</span>
+      </div>
+    </div>
+
+    <section id="about" class="reveal">
+      <p class="eyebrow">Sobre mí</p>
+      <h2>una idea para muchos Proyectos  </h2>
+
       <div class="about-wrapper">
-        <img src="img/ima.jpeg" alt="Foto de Sebastian Flores Castellanos" class="about-photo" />
-        <p class="about-text">
-          !!Si lo Pudes Imaginar Lo Puedes Desarrollo de software!! Me enfoco en crear soluciones optimizadas, escribir código limpio y aprender continuamente sobre nuevas herramientas y arquitecturas. <strong>Actualmente Estudiando una ingenieria en sistema  </strong> 
-        </p>
+        <div class="about-photo-wrap">
+          <img src="img/ima.jpeg" alt="Foto de Sebastian Flores Castellanos" class="about-photo" width="260" height="260" loading="lazy" />
+        </div>
+        <div class="about-text">
+          <p class="quote">“Si lo puedes imaginar, lo puedes crear.”</p>
+          <p>
+            Me enfoco en backend, escribir código limpio y arquitecturas.
+          </p>
+          <p>
+            <strong>Actualmente estudio Ingeniería en Sistemas</strong> en la Universidad Politécnica de Chiapas.
+          </p>
+        </div>
       </div>
+
+      <div class="info-grid">
+        <div class="card info">
+          <h3>Universidad</h3>
+          <p>Universidad Politécnica de Chiapas</p>
+        </div>
+        <div class="card info">
+          <h3>Carrera</h3>
+          <p>Ingeniería en Tecnologías de la Información e Innovación Digital (cursando si se llega a terminar)</p>
+        </div>
+        <div class="card info">
+          <h3>Enfoque</h3>
+          <p>Código limpio y solociones practicas </p>
+        </div>
+        <div class="card info">
+          <h3>Siempre aprendiendo</h3>
+          <p>Nuevas herramientas y Tecnologías</p>
+        </div>
+      </div>
+
+      <h3 class="sub-title">Trayectoria</h3>
+      <ol class="timeline">
+        <li>
+          <span class="t-date">Actualidad</span>
+          <h4>Ingeniería en Sistemas</h4>
+          <p>Universidad Politécnica de Chiapas</p>
+        </li>
+        <li>
+          <span class="t-date">2026</span>
+          <h4>Certificado Cisco Packet Tracer</h4>
+          <p>Redes y simulación de infraestructura.</p>
+        </li>
+        <li>
+          <span class="t-date">2026</span>
+          <h4>Certificado de Santander open academy </h4>
+          <p>Fundamentos de Python </p>
+        </li>
+        <li>
+          <span class="t-date">2026</span>
+          <h4>Certificado de Microsoft </h4>
+          <p>Introduccion al desarrollador wed</p>
+        </li>
+         <li>
+          <span class="t-date">2025</span>
+          <h4>Certificado AWS</h4>
+          <p>Fundamentos de computación en la nube.</p>
+        </li>
+      </ol>
     </section>
 
-    <section id="projects">
-      <h2>Proyectos Destacados</h2>
+    <section id="projects" class="reveal">
+      <p class="eyebrow">Proyectos</p>
+      <h2>Proyectos destacados</h2>
       <div class="grid">
-        <div class="card">
-          <h3>Servicios de Base de datos</h3>
-          <p>Servicio backend optimizado con autenticación segura y persistencia de datos relacional.</p>
-          <div class="tags">
-            <span class="tag">Java</span>
-            <span class="tag">MySQL</span>
-          </div>
-        </div>
+        <article class="card project">
+          <span class="num">01</span>
+          <h3>Tienda de galletas </h3>
+          <p>Servicio backend con seguridad optimisada.</p>
+          <ul class="tags" aria-label="Tecnologías">
+            <li class="tag">Java</li>
+            <li class="tag">MySQL</li>
+          </ul>
+        </article>
 
-        <div class="card">
-          <h3>Desarrollado en Paginas wed</h3>
+        <article class="card project">
+          <span class="num">02</span>
+          <h3>Desarrollo de páginas web</h3>
           <p>Herramienta interactiva para visualización de métricas estadísticas e interpretación de datos.</p>
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">Streamlit</span>
-            <span class="tag">Pandas</span>
-          </div>
-        </div>
+          <ul class="tags" aria-label="Tecnologías">
+            <li class="tag">Python</li>
+            <li class="tag">Streamlit</li>
+            <li class="tag">Pandas</li>
+          </ul>
+        </article>
 
-        <div class="card">
-          <h3>App Móvil Moderna</h3>
-          <p>Interfaz nativa fluida con arquitectura basada en componentes reactivos y navegación limpia.</p>
-          <div class="tags">
-            <span class="tag">Kotlin</span>
-            <span class="tag">Jetpack Compose</span>
-            <span class="tag">Android</span>
-          </div>
-        </div>
+        <article class="card project">
+          <span class="num">03</span>
+          <h3>App móvil moderna</h3>
+          <p>Interfaz nativa fluida. Enfocada en la Universidad</p>
+          <ul class="tags" aria-label="Tecnologías">
+            <li class="tag">Kotlin</li>
+            <li class="tag">Jetpack Compose</li>
+            <li class="tag">Android</li>
+          </ul>
+        </article>
       </div>
     </section>
 
-    <section id="skills">
-      <h2>Habilidades Técnicas</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Lenguajes</h3>
-          <div class="tags margin-top-sm">
-            <span class="tag">Java</span>
-            <span class="tag">Kotlin</span>
-            <span class="tag">Python</span>
-            <span class="tag">SQL</span>
-          </div>
-        </div>
+    <section id="skills" class="reveal">
+      <p class="eyebrow">especialidades</p>
+      <h2>Habilidades técnicas</h2>
 
-        <div class="card">
-          <h3>Herramientas y Entornos</h3>
-          <div class="tags margin-top-sm">
-            <span class="tag">Git & GitHub</span>
-            <span class="tag">Linux / Terminal CLI</span>
-            <span class="tag">MySQL / DBeaver</span>
-            <span class="tag">Docker</span>
-          </div>
-        </div>
-      </div>
+      <h3 class="sub-title">Lenguajes</h3>
+      <ul class="skill-grid">         
+
+        <li class="skill"><span>Java</span></li>
+        <li class="skill"><span>Kotlin</span></li>
+        <li class="skill"><span>Python</span></li>
+        <li class="skill"><span>SQL</span></li>
+      </ul>
+
+      <h3 class="sub-title">Herramientas y entornos</h3>
+      <ul class="skill-grid">
+        <li class="skill"><span>Git &amp; GitHub</span></li>
+        <li class="skill"><span>Linux / Terminal CLI</span></li>
+        <li class="skill"><span>MySQL / DBeaver</span></li>
+        <li class="skill"><span>Docker</span></li>
+      </ul>
     </section>
 
-    <section id="certificates">
+    <section id="certificates" class="reveal">
+      <p class="eyebrow">Logros,si se Puede llamar asi </p>
       <h2>Certificados</h2>
       <div class="grid">
-        <div class="card cert-card">
-          <img src="img/img2.png" alt="Certificado 1" class="cert-img" />
-          <h3>Certificado de cisco packet tracer</h3>
-          <p>2026</p>
-        </div>
+        <figure class="card cert-card">
+          <div class="cert-frame">
+            <img src="img/img2.png" alt="Certificado de Cisco Packet Tracer" class="cert-img" loading="lazy" />
+          </div>
+          <figcaption>
+            <h3>Cisco Packet Tracer</h3>
+            <p>2025</p>
+          </figcaption>
+        </figure>
 
-        <div class="card cert-card">
-          <img src="img/img3.jpg" alt="Certificado 2" class="cert-img" />
-          <h3>certificado de AWS</h3>
-          <p>2025</p>
+        <figure class="card cert-card">
+          <div class="cert-frame">
+            <img src="img/img3.jpg" alt="Certificado de AWS" class="cert-img" loading="lazy" />
+          </div>
+          <figcaption>
+            <h3>AWS</h3>
+            <p>2025</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <div class="contact-card">
+        <h2>Trabajemos juntos</h2>
+        <p class="contact-intro">¿Tienes un proyecto en mente? Escríbeme, </p>
+        <div class="contact-actions">
+          <a href="https://github.com/" class="btn">GitHub</a>
+          <a href="https://www.instagram.com/sebastiaan.fc/?hl=es" class="btn btn-outline" target="_blank" rel="noopener">Instagram</a>
         </div>
+        <p class="contact-phone">Tel: 961XXXXX</p>
       </div>
     </section>
   </main>
 
-  <footer id="contact">
-    <p>&copy; Futuro Desarrollador Software .</p>
-    <p>&copy; Mi Contacto:961XXXXX .</p>
-    <p>&copy; Mi Correo: Sebastian@mail.com .</p>
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Sebastian Flores Castellanos · Futuro desarrollador de software</p>
+    <a href="#inicio" class="back-top">Volver arriba ↑</a>
   </footer>
+
+  <script src="Script.js" defer></script>
 </body>
 </html>
